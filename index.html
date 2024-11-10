@@ -56,7 +56,7 @@
               </li>
               <li class="tab-list__item">
                 <a class="tab-list__link" href="#tab2" data-toggle="tab"
-                  >Pachten</a
+                  >Verkaufen</a
                 >
               </li>
               <li class="tab-list__item">
@@ -98,12 +98,42 @@
                     <div class="col-2">
                       <label for="customRange3" class="label"
                         >Preis pro Hektar</label
+                        >
+                        <input
+                          type="range"
+                          class="form-range"
+                          min="0"
+                          max="500"
+                          step="2"
+                          oninput="this.nextElementSibling.value = this.value"
+                          id="customRange3"
+                        />
+                        <output>0</output><span> Hektar</span>
+                      </div>
+                      <div class="col-2">
+                        <label for="customRange3" class="label"
+                          >Niederschlagsmenge in Millimeter</label
+                          >
+                          <input
+                            type="range"
+                            class="form-range"
+                            min="300"
+                            max="3000"
+                            step="2"
+                            oninput="this.nextElementSibling.value = this.value"
+                            id="customRange3"
+                          />
+                          <output>0</output><span>Millimeter</span>    
+                      </div>
+                      <div class="col-2">
+                        <label for="customRange3" class="label"
+                          >Gesamtpreis</label
                       >
                       <input
                         type="range"
                         class="form-range"
-                        min="5000"
-                        max="100000"
+                        min="50000"
+                        max="5000000"
                         step="200"
                         id="customRange3"
                         oninput="this.nextElementSibling.value = this.value"
@@ -120,6 +150,35 @@
                         <option>Mais</option>
                         <option>Soja</option>
                         <option>Vieh</option>
+                      </select>
+                      <div class="select-dropdown"></div>
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <label class="label">Bodentyp:</label>
+                    <i class="zmdi zmdi-flower-alt input-group-symbol"></i>
+                    <div class="rs-select2 js-select-simple select--no-search">
+                      <select name="car-group" multiple>
+                        <option selected="selected">Sandboden</option>
+                        <option>Lehmiger Boden</option>
+                        <option>Tonboden</option>
+                        <option>Schwarzerde</option>
+                        <option>Torfboden</option>
+                        <option>Humusreicher Boden</option>
+                        <option>Schwarzerde</option>
+                      </select>
+                      <div class="select-dropdown"></div>
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <label class="label">Klimatyp:</label>
+                    <i class="zmdi zmdi-flower-alt input-group-symbol"></i>
+                    <div class="rs-select2 js-select-simple select--no-search">
+                      <select name="car-group" multiple>
+                        <option selected="selected">Sandboden</option>
+                        <option>Ozeanisches Klima</option>
+                        <option>Kontinentales Klima</option>
+                        <option>Kontinentales Klima mit heißen Sommern</option>
                       </select>
                       <div class="select-dropdown"></div>
                     </div>
