@@ -1240,3 +1240,18 @@ body {
   border: 0;
   transition: all .2s ease;
 }
+
+.parent-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  height: 100%;            /* Maintain full height if necessary */
+  padding: 20px 0;         /* Add top and bottom padding */
+  box-sizing: border-box;  /* Include padding in height calculations */
+}
+
+/* Optional: Define a max-width for the .file-upload div if it’s too wide */
+.file-upload {
+  margin: auto;
+  max-width: 600px;           /* Adjust width as needed */
+}
